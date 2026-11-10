@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>e.l.f. Cosmetics - Registro</title>
+</head>
+
+<body bgcolor="#121212" text="#FFFFFF" topmargin="0" leftmargin="0">
+
+    <table border="0" width="100%" bgcolor="#1E1E1E" cellpadding="15" cellspacing="0" align="center">
+        <tr>
+            <td align="center">
+                <font face="Montserrat, Arial, sans-serif" size="7" color="#FFB6C1">
+                    <b>e . l . f . &nbsp;&nbsp; C O S M E T I C S</b>
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <nav align="center" style="background-color: #2D2D2D; padding: 15px 0px; font-family: 'Montserrat', sans-serif;">
+        <a href="index.html" style="color: #FFFFFF; text-decoration: none; font-size: 15px;"><b>INICIO &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</b></a>
+        <a href="login.html" style="color: #FFFFFF; text-decoration: none; font-size: 15px;"><b>INICIAR SESIÓN &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</b></a>
+        <a href="registro.html" style="color: #FFB6C1; text-decoration: none; font-size: 15px;"><b>REGISTRO DE CLIENTES</b></a>
+    </nav>
+
+    <div align="center">
+        <br><br>
+
+        <font face="Montserrat, Arial, sans-serif" size="5" color="#FFB6C1">
+            <h2>CREAR UNA CUENTA</h2>
+        </font>
+
+        <!-- FORMULARIO DE REGISTRO CONECTADO A PHP -->
+        <form action="procesar_registro.php" method="POST">
+
+            <table border="0" cellpadding="10" cellspacing="0" bgcolor="#1E1E1E" style="border-radius: 8px; border: 1px solid #333333;" width="400">
+
+                <tr>
+                    <td>
+                        <font face="Arial, sans-serif" size="2" color="#FFFFFF">
+                            Nombre Completo:
+                        </font>
+                        <br>
+                        <input type="text" name="nombre" required style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box;" placeholder="Ej. Ana María Gómez">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <font face="Arial, sans-serif" size="2" color="#FFFFFF">
+                            Correo Electrónico:
+                        </font>
+                        <br>
+                        <input type="email" name="correo" required style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box;" placeholder="correo@ejemplo.com">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <font face="Arial, sans-serif" size="2" color="#FFFFFF">
+                            Contraseña:
+                        </font>
+                        <br>
+                        <input type="password" name="password" required style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <font face="Arial, sans-serif" size="2" color="#FFFFFF">
+                            Teléfono:
+                        </font>
+                        <br>
+                        <input type="text" name="telefono" required style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box;" placeholder="656-000-0000">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td align="center">
+                        <br>
+                
+                        <input type="submit" value="REGISTRARME" style="background-color: #FFB6C1; color: #121212; border: none; padding: 10px 20px; font-weight: bold; border-radius: 4px; cursor: pointer;">
+                
+                        &nbsp;
+                
+                        <input type="reset" value="LIMPIAR FORMULARIO" style="background-color: #2D2D2D; color: #FFFFFF; border: 1px solid #FFB6C1; padding: 10px 20px; font-weight: bold; border-radius: 4px; cursor: pointer;">
+                    </td>
+                </tr>
+                
+
+            </table>
+        </form>
+    </div>
+
+    <script>
+        const parametros = new URLSearchParams(window.location.search);
+        const registro = parametros.get("registro");
+    
+        if (registro === "ok") {
+            alert("¡Registrado correctamente!");
+            document.getElementById("pacienteForm")?.reset();
+        } else if (registro === "duplicado") {
+            alert("Ese correo ya está registrado. Intenta con otro.");
+        } else if (registro === "error") {
+            alert("No se pudo completar el registro. Inténtalo nuevamente.");
+        }
+    
+        if (registro) {
+            window.history.replaceState(
+                {},
+                document.title,
+                window.location.pathname
+            );
+        }
+    </script>
+    
+</body>
+</html>

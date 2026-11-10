@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>e.l.f. Cosmetics - Labiales</title>
+</head>
+<body bgcolor="#121212" text="#FFFFFF" topmargin="0" leftmargin="0">
+
+    <table border="0" width="100%" bgcolor="#1E1E1E" cellpadding="15" cellspacing="0">
+        <tr>
+            <td align="center">
+                <font face="Montserrat, Arial, sans-serif" size="7" color="#FFB6C1">
+                    <b>e . l . f . &nbsp;&nbsp; C O S M E T I C S</b>
+                </font>
+                <br>
+                <font face="Montserrat, Arial, sans-serif" size="2" color="#DDDDDD">
+                    MAQUILLAJE VEGANO &amp; CRUELTY-FREE
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <table border="0" width="100%" bgcolor="#2D2D2D" cellpadding="15" cellspacing="0">
+        <tr>
+            <td align="center">
+                <font face="Montserrat, Arial, sans-serif" size="2">
+                    <a href="index.html" style="color:#FFB6C1; text-decoration:none;"><b>INICIO</b></a>
+                    &nbsp;&nbsp; | &nbsp;&nbsp;
+
+                    <details style="display:inline-block;">
+                        <summary style="color:#FFFFFF; cursor:pointer; display:inline;">
+                            <b>CUENTA</b>
+                        </summary>
+                        <div style="position:absolute; background-color:#1E1E1E; padding:10px; z-index:10;">
+                            <a href="login.html" style="display:block; color:white; text-decoration:none; padding:10px;">INICIAR SESIÓN</a>
+                            <a href="registro.html" style="display:block; color:white; text-decoration:none; padding:10px;">REGISTRO DE CLIENTES</a>
+                        </div>
+                    </details>
+
+                    &nbsp;&nbsp; | &nbsp;&nbsp;
+
+                    <a href="carrito.html" onclick="localStorage.setItem('categoriaAnterior', 'labiales.html')" style="color:#FFFFFF; text-decoration:none;">
+                        <b>CARRITO (<span id="contadorCarrito">0</span>)</b>
+                    </a>
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table border="0" width="98%" align="center" cellpadding="8" cellspacing="0">
+        <tr>
+            <td width="18%" valign="top" bgcolor="#1E1E1E">
+                <table border="0" width="100%" cellpadding="10" cellspacing="5">
+                    <tr>
+                        <td align="center">
+                            <font face="Montserrat, Arial, sans-serif" size="3" color="#FFB6C1"><b>CATEGORÍAS</b></font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#2D2D2D" align="center">
+                            <font face="Montserrat, Arial, sans-serif" size="2"><a href="bases.html" style="color:#FFFFFF; text-decoration:none;"><b>BASES</b></a></font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#2D2D2D" align="center">
+                            <font face="Montserrat, Arial, sans-serif" size="2"><a href="correctores.html" style="color:#FFFFFF; text-decoration:none;"><b>CORRECTORES</b></a></font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#2D2D2D" align="center">
+                            <font face="Montserrat, Arial, sans-serif" size="2"><a href="rubores.html" style="color:#FFFFFF; text-decoration:none;"><b>RUBORES</b></a></font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#2D2D2D" align="center">
+                            <font face="Montserrat, Arial, sans-serif" size="2"><a href="labiales.html" style="color:#FFB6C1; text-decoration:none;"><b>LABIALES</b></a></font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#2D2D2D" align="center">
+                            <font face="Montserrat, Arial, sans-serif" size="2"><a href="polvos.html" style="color:#FFFFFF; text-decoration:none;"><b>POLVOS</b></a></font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+            <td width="82%" valign="top">
+                <font face="Montserrat, Arial, sans-serif" size="6" color="#FFB6C1">
+                    <center><b>LABIALES</b></center>
+                </font>
+                <br>
+
+                <table border="0" width="100%" cellpadding="10" cellspacing="12">
+                    <tr>
+                        <td width="33%" align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="l1.jpg" width="210" height="210" alt="Glow Reviver Lip Oil" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Glow Reviver Lip Oil</b>
+                                <br><br>
+                                Aceite nutritivo con jojoba y aguacate. Aporta brillo sutil sin sensación pegajosa.
+                                <br><br>
+                                <font color="#800033"><b>$180.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Glow Reviver Lip Oil', 180)" style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+
+                        <td width="33%" align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="l2.jpg" width="210" height="210" alt="Pout Clout Lip Plumping Pen" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Pout Clout Lip Plumping Pen</b>
+                                <br><br>
+                                Bálsamo y brillo 3 en 1 con efecto de volumen enriquecido con extracto de arándano.
+                                <br><br>
+                                <font color="#800033"><b>$200.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Pout Clout Lip Plumping Pen', 200)" style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+
+                        <td width="33%" align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="l3.jpg" width="210" height="210" alt="Squeeze Me Lip Balm" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Squeeze Me Lip Balm</b>
+                                <br><br>
+                                Bálsamo hidratante con manteca de karité y ácido hialurónico con aromas frutales.
+                                <br><br>
+                                <font color="#800033"><b>$130.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Squeeze Me Lip Balm', 130)" style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="l4.jpg" width="210" height="210" alt="O Face Satin Lipstick" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. O Face Satin Lipstick</b>
+                                <br><br>
+                                Barra de alta pigmentación y acabado satinado con escualano y ésteres de jojoba.
+                                <br><br>
+                                <font color="#800033"><b>$210.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. O Face Satin Lipstick', 210)" style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+
+                        <td align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="l5.jpg" width="210" height="210" alt="Liquid Matte Lipstick" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Liquid Matte Lipstick</b>
+                                <br><br>
+                                Cobertura completa intransferible con fórmula enriquecida con vitamina E.
+                                <br><br>
+                                <font color="#800033"><b>$170.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Liquid Matte Lipstick', 170)" style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+
+                        <td align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="l6.jpg" width="210" height="210" alt="Seriously Satin Lipstick" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Seriously Satin Lipstick</b>
+                                <br><br>
+                                Barra económica de textura sedosa ideal para el uso diario con tono uniforme.
+                                <br><br>
+                                <font color="#800033"><b>$110.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Seriously Satin Lipstick', 110)" style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="l7.jpg" width="210" height="210" alt="Glossy Lip Stain" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Glossy Lip Stain</b>
+                                <br><br>
+                                Tinta de larga duración que se aplica brillante y deja un tinte mate resistente.
+                                <br><br>
+                                <font color="#800033"><b>$160.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Glossy Lip Stain', 160)" style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+
+                        <td align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="l8.jpg" width="210" height="210" alt="Matte Lip Color" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Matte Lip Color</b>
+                                <br><br>
+                                Crayón retráctil mate aterciopelado con vitaminas A, C y E para máxima precisión.
+                                <br><br>
+                                <font color="#800033"><b>$140.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Matte Lip Color', 140)" style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+
+                        <td align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="l9.jpg" width="210" height="210" alt="Lip Exfoliator" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Lip Exfoliator</b>
+                                <br><br>
+                                Barra con cristales de azúcar real y manteca de karité para remover piel muerta.
+                                <br><br>
+                                <font color="#800033"><b>$120.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Lip Exfoliator', 120)" style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="l10.jpg" width="210" height="210" alt="Sheer Slick Lipstick" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Sheer Slick Lipstick</b>
+                                <br><br>
+                                Barra cremosa translúcida con aceite de semilla de pradera para un velo jugoso.
+                                <br><br>
+                                <font color="#800033"><b>$150.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Sheer Slick Lipstick', 150)" style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table border="0" width="100%" bgcolor="#1E1E1E" cellpadding="20">
+        <tr>
+            <td align="center">
+                <font face="Montserrat, Arial, sans-serif" size="2" color="#AAAAAA">
+                    Indra Jezabel Martinez Ortiz 5°J 0871
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function obtenerCarrito() {
+            return JSON.parse(localStorage.getItem("carritoElf")) || [];
+        }
+
+        function agregarAlCarrito(nombre, precio) {
+            const carrito = obtenerCarrito();
+
+            const existente = carrito.find(function(producto) {
+                return producto.nombre === nombre;
+            });
+
+            if (existente) {
+                existente.cantidad++;
+            } else {
+                carrito.push({
+                    nombre: nombre,
+                    precio: precio,
+                    cantidad: 1
+                });
+            }
+
+            localStorage.setItem("carritoElf", JSON.stringify(carrito));
+
+            actualizarContador();
+            alert("Producto agregado al carrito.");
+        }
+
+        function actualizarContador() {
+            const carrito = obtenerCarrito();
+
+            const cantidad = carrito.reduce(function(total, producto) {
+                return total + producto.cantidad;
+            }, 0);
+
+            const contador = document.getElementById("contadorCarrito");
+
+            if (contador) {
+                contador.textContent = cantidad;
+            }
+        }
+
+        actualizarContador();
+    </script>
+
+</body>
+</html>

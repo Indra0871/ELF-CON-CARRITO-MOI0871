@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>e.l.f. Cosmetics - Correctores</title>
+</head>
+
+<body bgcolor="#121212" text="#FFFFFF" topmargin="0" leftmargin="0">
+
+    <!-- ENCABEZADO -->
+    <table border="0" width="100%" bgcolor="#1E1E1E" cellpadding="15" cellspacing="0">
+        <tr>
+            <td align="center">
+                <font face="Montserrat, Arial, sans-serif" size="7" color="#FFB6C1">
+                    <b>e . l . f . &nbsp;&nbsp; C O S M E T I C S</b>
+                </font>
+                <br>
+                <font face="Montserrat, Arial, sans-serif" size="2" color="#DDDDDD">
+                    MAQUILLAJE VEGANO &amp; CRUELTY-FREE
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <table border="0" width="100%" bgcolor="#2D2D2D" cellpadding="15" cellspacing="0">
+        <tr>
+            <td align="center">
+                <font face="Montserrat, Arial, sans-serif" size="2">
+
+                    <a href="index.html" style="color:#FFB6C1; text-decoration:none;">
+                        <b>INICIO</b>
+                    </a>
+
+                    &nbsp;&nbsp; | &nbsp;&nbsp;
+
+                    <details style="display:inline-block;">
+                        <summary style="color:#FFFFFF; cursor:pointer; display:inline;">
+                            <b>CUENTA</b>
+                        </summary>
+
+                        <div style="position:absolute; background-color:#1E1E1E; padding:10px; z-index:10;">
+                            <a href="login.html" style="display:block; color:white; text-decoration:none; padding:10px;">
+                                INICIAR SESIÓN
+                            </a>
+
+                            <a href="registro.html" style="display:block; color:white; text-decoration:none; padding:10px;">
+                                REGISTRO DE CLIENTES
+                            </a>
+                        </div>
+                    </details>
+
+                    &nbsp;&nbsp; | &nbsp;&nbsp;
+
+                    <a href="carrito.html" onclick="localStorage.setItem('categoriaAnterior', 'correctores.html')" style="color:#FFFFFF; text-decoration:none;">
+                        <b>CARRITO (<span id="contadorCarrito">0</span>)</b>
+                    </a>
+
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- CONTENIDO -->
+    <table border="0" width="98%" align="center" cellpadding="8" cellspacing="0">
+        <tr>
+
+            <!-- CATEGORÍAS -->
+            <td width="18%" valign="top" bgcolor="#1E1E1E">
+                <table border="0" width="100%" cellpadding="10" cellspacing="5">
+
+                    <tr>
+                        <td align="center">
+                            <font face="Montserrat, Arial, sans-serif" size="3" color="#FFB6C1">
+                                <b>CATEGORÍAS</b>
+                            </font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td bgcolor="#2D2D2D" align="center">
+                            <font face="Montserrat, Arial, sans-serif" size="2">
+                                <a href="bases.html" style="color:#FFFFFF; text-decoration:none;"><b>BASES</b></a>
+                            </font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td bgcolor="#2D2D2D" align="center">
+                            <font face="Montserrat, Arial, sans-serif" size="2">
+                                <a href="correctores.html" style="color:#FFB6C1; text-decoration:none;"><b>CORRECTORES</b></a>
+                            </font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td bgcolor="#2D2D2D" align="center">
+                            <font face="Montserrat, Arial, sans-serif" size="2">
+                                <a href="rubores.html" style="color:#FFFFFF; text-decoration:none;"><b>RUBORES</b></a>
+                            </font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td bgcolor="#2D2D2D" align="center">
+                            <font face="Montserrat, Arial, sans-serif" size="2">
+                                <a href="labiales.html" style="color:#FFFFFF; text-decoration:none;"><b>LABIALES</b></a>
+                            </font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td bgcolor="#2D2D2D" align="center">
+                            <font face="Montserrat, Arial, sans-serif" size="2">
+                                <a href="polvos.html" style="color:#FFFFFF; text-decoration:none;"><b>POLVOS</b></a>
+                            </font>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+
+            <!-- PRODUCTOS -->
+            <td width="82%" valign="top">
+
+                <font face="Montserrat, Arial, sans-serif" size="6" color="#FFB6C1">
+                    <center><b>CORRECTORES</b></center>
+                </font>
+
+                <br>
+
+                <table border="0" width="100%" cellpadding="10" cellspacing="12">
+
+                    <tr>
+                        <td width="33%" align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="c1.jpg" width="210" height="210" alt="16HR Camo Concealer" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. 16HR Camo Concealer</b>
+                                <br><br>
+                                Cobertura total y larga duración (hasta 16h). Acabado mate absoluto para piel grasa o mixta.
+                                <br><br>
+                                <font color="#800033"><b>$180.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. 16HR Camo Concealer', 180.00)"
+                                style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+
+                        <td width="33%" align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="c2.jpg" width="210" height="210" alt="Hydrating Camo Concealer" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Hydrating Camo Concealer</b>
+                                <br><br>
+                                Cobertura total con hongo tremella y rosa para mantener la ojera hidratada. Acabado satinado.
+                                <br><br>
+                                <font color="#800033"><b>$180.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Hydrating Camo Concealer', 180.00)"
+                                style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+
+                        <td width="33%" align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="c3.jpg" width="210" height="210" alt="Halo Glow Highlight Beauty Wand" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Halo Glow Highlight Beauty Wand</b>
+                                <br><br>
+                                Varita con aplicador de esponja que corrige zonas apagadas aportando un destello radiante.
+                                <br><br>
+                                <font color="#800033"><b>$240.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Halo Glow Highlight Beauty Wand', 240.00)"
+                                style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="c4.jpg" width="210" height="210" alt="Flawless Brightening Concealer" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Flawless Brightening Concealer</b>
+                                <br><br>
+                                Corrector pluma con ácido hialurónico que ilumina sombras con cobertura ligera.
+                                <br><br>
+                                <font color="#800033"><b>$160.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Flawless Brightening Concealer', 160.00)"
+                                style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+
+                        <td align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="c5.jpg" width="210" height="210" alt="Acne Fighting Spot Concealer" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Acne Fighting Spot Concealer</b>
+                                <br><br>
+                                Aplicador lápiz con ácido salicílico, árbol de té y aloe vera para tratar granitos.
+                                <br><br>
+                                <font color="#800033"><b>$150.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Acne Fighting Spot Concealer', 150.00)"
+                                style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+
+                        <td align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="c6.jpg" width="210" height="210" alt="Blemish Breakthrough Concealer" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Blemish Breakthrough Concealer</b>
+                                <br><br>
+                                Cobertura media que ayuda a controlar brotes activos y calmar rojeces sin obstruir poros.
+                                <br><br>
+                                <font color="#800033"><b>$170.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Blemish Breakthrough Concealer', 170.00)"
+                                style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="c7.jpg" width="210" height="210" alt="HD Lifting Concealer" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. HD Lifting Concealer</b>
+                                <br><br>
+                                Fórmula ligera con vitamina C y té verde que disimula líneas finas y unifica el tono.
+                                <br><br>
+                                <font color="#800033"><b>$140.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. HD Lifting Concealer', 140.00)"
+                                style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+
+                        <td align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="c8.jpg" width="210" height="210" alt="Clay Concealer Stick" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Clay Concealer Stick</b>
+                                <br><br>
+                                Barra con arcilla de caolín que absorbe el exceso de grasa. Ideal para retoques rápidos.
+                                <br><br>
+                                <font color="#800033"><b>$130.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Clay Concealer Stick', 130.00)"
+                                style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+
+                        <td align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="c9.jpg" width="210" height="210" alt="Beautifully Bare Concealer Stick" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Beautifully Bare Concealer Stick</b>
+                                <br><br>
+                                Barra cremosa de cobertura ultraligera que ofrece un acabado natural de segunda piel.
+                                <br><br>
+                                <font color="#800033"><b>$130.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Beautifully Bare Concealer Stick', 130.00)"
+                                style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" valign="top" bgcolor="#E6A3C2" style="border: 2px solid #FFB6C1; border-radius: 15px; padding: 15px;">
+                            <img src="c10.jpg" width="210" height="210" alt="Color Correcting Palette" style="border-radius: 10px;">
+                            <br><br>
+                            <font face="Montserrat, Arial, sans-serif" size="2" color="#121212">
+                                <b>e.l.f. Color Correcting Palette</b>
+                                <br><br>
+                                Paleta de 4 tonos cremosos para neutralizar rojeces, opacidad y ojeras antes de la base.
+                                <br><br>
+                                <font color="#800033"><b>$190.00 MXN</b></font>
+                            </font>
+                            <br><br>
+                            <button onclick="agregarAlCarrito('e.l.f. Color Correcting Palette', 190.00)"
+                                style="background-color:#2D2D2D; color:white; border:1px solid #800033; border-radius:8px; padding:9px 12px; cursor:pointer;">
+                                AGREGAR AL CARRITO
+                            </button>
+                        </td>
+
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- PIE DE PÁGINA -->
+    <table border="0" width="100%" bgcolor="#1E1E1E" cellpadding="20">
+        <tr>
+            <td align="center">
+                <font face="Montserrat, Arial, sans-serif" size="2" color="#AAAAAA">
+                    Indra Jezabel Martinez Ortiz 5°J 0871
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <!-- FUNCIONES DEL CARRITO -->
+    <script>
+
+        function obtenerCarrito() {
+            return JSON.parse(localStorage.getItem("carritoElf")) || [];
+        }
+
+        function agregarAlCarrito(nombre, precio) {
+            const carrito = obtenerCarrito();
+
+            const existente = carrito.find(function(producto) {
+                return producto.nombre === nombre;
+            });
+
+            if (existente) {
+                existente.cantidad++;
+            } else {
+                carrito.push({
+                    nombre: nombre,
+                    precio: precio,
+                    cantidad: 1
+                });
+            }
+
+            localStorage.setItem("carritoElf", JSON.stringify(carrito));
+
+            actualizarContador();
+
+            alert("Producto agregado al carrito.");
+        }
+
+        function actualizarContador() {
+            const carrito = obtenerCarrito();
+
+            const cantidad = carrito.reduce(function(total, producto) {
+                return total + producto.cantidad;
+            }, 0);
+
+            const contador = document.getElementById("contadorCarrito");
+
+            if (contador) {
+                contador.textContent = cantidad;
+            }
+        }
+
+        actualizarContador();
+
+    </script>
+
+</body>
+</html>
